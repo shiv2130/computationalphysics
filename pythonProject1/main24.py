@@ -4,3 +4,4 @@ print(keyword.kwlist)
 a = 10
 b = type(a)
 print(b)
+print(id(a))
