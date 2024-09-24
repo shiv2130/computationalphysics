@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np 
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 y = [2, 4, 5, 7, 6, 7, 8, 9, 11, 13,]
-plt.scatter(x, y)
+plt.scatter(x, y, marker= "*", color = 'r')
 plt.xlabel("X-axis")
 plt.ylabel("Y-axis")
 plt.title("SCATTER PLOT")
