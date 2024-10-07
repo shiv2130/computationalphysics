@@ -43,11 +43,41 @@
 #     print(c, "is greater")
 
 #Given input is even or odd
+#
+# a = int(input(" Enter a number to check if it's even or odd: "))
+# if a<0:
+#     print("Enter positive number")
+# elif a%2==0:
+#     print(a, "is even")
+# else:
+#     print(a, "is odd")
 
-a = int(input(" Enter a number to check if it's even or odd: "))
-if a<0:
-    print("Enter positive number")
-elif a%2==0:
-    print(a, "is even")
-else:
-    print(a, "is odd")
+# def evenOdd(a):
+#     if a%2==0:
+#         print("Even number")
+#     else:
+#         print("Odd Number")
+#     return
+# b = int(input("Enter a number: "))
+# c = evenOdd(b)
+# print(c)
+def gradecal():
+    phy = float(input("Enter marks of Physics: "))
+    chem = float(input("Enter marks of Chemistry: "))
+    math = float(input("Enter marks of Maths: "))
+    avg = (phy+chem+math)/3
+    if(avg>90):
+        print("S Grade")
+    elif(avg>80):
+        print("A Grade")
+    elif(avg>70):
+        print("B grade")
+    elif(avg>60):
+        print("C grade")
+    elif(avg>50):
+        print("D grade")
+    elif(avg>40):
+        print("E grade")
+    else:
+        print("F grade")
+print(gradecal())
