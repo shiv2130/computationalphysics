@@ -33,10 +33,23 @@
 #     print(val)
 # print("The end")
 
-n = int(input("Enter a number to find it's prime or not: "))
-for  i in range(2, n):
-    if (n%i==0):
-        print("Not prime Number")
-        break
-else:
-    print("Prime")
+
+# n = int(input("Enter a number to find it's prime or not: "))
+# for  i in range(2, n):
+#     if (n%i==0):
+#         print("Not prime Number")
+#         break
+# else:
+#     print("Prime")
+
+
+def fact(n):
+    if(n<0):
+        print("Invalid number")
+    elif(n==0 or n==1):
+        return 1
+    else:
+        return n*fact(n-1)
+a = int(input("Enter a number: "))
+b = fact(a)
+print(b)
