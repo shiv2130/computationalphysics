@@ -1,8 +1,9 @@
 import linear_Search as l
+import bsort as b
 while True:
     print("1. Linear search")
     print("2. Binary search")
-    print("3. Exit")
+    print("3. Bubble Sort")
     c = int(input("Enter choice: "))
     if c == 1:
         a = [10, 15, 89, 50, 25, 20, 110]
@@ -22,14 +23,14 @@ while True:
             print("Sort the array first")
             break
     elif c == 3:
-          print("Thank you")
-          break
+          u = [5, 10, 8, 100, 51, 20, 49, 35, 42]
+          l.ascend(u)
+          print()
+          l.descend(u)
 
-    p = input("Do you wish to continue(Y/N): ")
+    p = input("\nDo you wish to continue(Y/N): ")
     if p == "N" or p == "n":
         print("Thank You!")
         break
-
-
 
 

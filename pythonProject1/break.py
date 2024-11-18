@@ -42,7 +42,7 @@
 # else:
 #     print("Prime")
 
-
+#using reccursive function created a factorial program
 def fact(n):
     if(n<0):
         print("Invalid number")
